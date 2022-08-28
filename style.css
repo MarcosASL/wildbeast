@@ -20,3 +20,28 @@ a {
 img {
   max-width: 100%;
 }
+/*GRID GERAL AQUI inicio-----------------------------------------*/
+.estrutura {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px; /*p/ definir a qtidade de colunas do site, que são 3*/
+  grid-template-areas:  /*defindo as areas*/
+    "header header header"
+    "sidenav content anuncios"
+    "footer footer footer";
+}
+.header {
+  grid-area: header; /*posicionando nas area*/
+}
+.sidenav {
+  grid-area: sidenav;
+}
+.content {
+  grid-area: content;
+}
+.anuncios {
+  grid-area: anuncios;
+}
+.footer {
+  grid-area: footer;
+}
+/*GRID GERAL AQUI FIM---------------------------------------------*/
