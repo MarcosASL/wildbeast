@@ -45,3 +45,37 @@ img {
   grid-area: footer;
 }
 /*GRID GERAL AQUI FIM---------------------------------------------*/
+
+/*HEADER*/
+.header {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto; /*marca site na esquerda e nav na direita*/
+  align-items: center;
+}
+.logo {
+  max-width: 200px; /*largura max do logo*/
+}
+
+header nav ul {
+  display: flex; /*p deixar um do lado do outro*/
+  flex-wrap: wrap;
+}
+header nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.125em;
+  background: rgba(0, 0, 0, 0.1); /*preto bem opaco*/
+  border-radius: 5px;
+  transition: 0.1s; /*a saída do mouse de cima do a fica mais suave*/
+}
+.header nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*o + aqui seria como "todo li que vier após um li, eu quero add esse parametro"*/
+.header li + li {
+  margin-left: 30px;
+}
