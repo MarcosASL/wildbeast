@@ -122,3 +122,29 @@ header nav a {
 .img-2 {
   align-self: end;
 }
+
+/*ESTILOS CONTENT*/
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: -0.005em; /*diminuir o espaçamento entes letras*/
+  color: rgba(0, 0, 0, 0.7);
+}
+/*falar com o p que vem após o p*/
+.informacoes p + p {
+  margin-top: 30px;
+}
+
+/*TITULO*/
+.titulo {
+  color: #b07dfb;
+}
+.titulo h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: 700; /*bold, valor da tipografia escolhida*/
+}
+.titulo span {
+  font-size: 0.875em; /*+/- 14px*/
+  font-style: italic;
+}
