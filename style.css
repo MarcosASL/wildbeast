@@ -109,3 +109,16 @@ header nav a {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+/*CLASSE GERAL(p poder ser usada sempre no site)*/
+.col-wide {
+  grid-column: 1 / -1; /*uma coluna que pega de uma ponta a a ponta*/
+}
+/*-------------------------------------------------------------------*/
+
+.img-1 {
+  grid-row: span 2; /*a img 1 se expande por 2linhas*/
+  align-self: end; /*vertical é align. horizontal é justify, falar com item especifico é self, falar com todos itens é items*/
+}
+.img-2 {
+  align-self: end;
+}
