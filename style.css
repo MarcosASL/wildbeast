@@ -211,3 +211,28 @@ p {
   font-size: 1.125em;
   padding: 15px;
 }
+/*criar as linhas do atributo*/
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
+}
+
+/*ANUNCIOS*/
+.anuncios {
+  display: grid;
+  background: #fafbfc;
+  align-content: start; /*para uma img  ficar embaixo da outro */
+  padding: 30px;
+  gap: 30px; /*desgrudar uma img da outra*/
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /*responsivo*/
+} /*auto-fit = tente colocar o tanto de colunas que der para, no min 150px e no máx 1fr*/
+
+/*FOOTER*/
+.footer {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
