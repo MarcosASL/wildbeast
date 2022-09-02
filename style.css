@@ -163,3 +163,51 @@ p {
   box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
   position: relative;
 }
+
+.caracteristiticas > div:first-child {
+  margin-right: 30px; /*dá uma margem na direita apenas na primeira div*/
+}
+.caracteristiticas span {
+  display: block; /*p pegar de ponta a ponta, fazendo o kg e age cair p linha de baixo*/
+  color: #b07dfb;
+}
+.numero {
+  font-size: 3em;
+  line-height: 1;
+  margin: 10px auto;
+}
+.rotulo {
+  background: white;
+  border-radius: 0 0 5px 5px;
+  /* padding: 50px 0;  */
+  position: relative;
+  top: 2px; /*crescer 2px e esconde o a quina roxa que tava vazando no kg*/
+}
+
+.destaque {
+  font-size: 0.875em;
+  color: #b07dfb;
+  max-width: 16em; /*p não esticar de ponta a ponta, se manter com 16em*/
+}
+.citacao,
+.atributos {
+  align-self: start;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+.citacao p {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto; /*p alinhar ao centro*/
+  color: white;
+}
+.atributos li {
+  color: white;
+  font-family: courier, monospace;
+  font-size: 1.125em;
+  padding: 15px;
+}
