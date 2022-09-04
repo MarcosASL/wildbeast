@@ -309,3 +309,21 @@ p {
     margin: 30px 30px 30px 0;
   }
 }
+
+/*CONTENT*/
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto; /*uma só coluna de auto*/
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.grid {
+  grid-template-columns: 200px 3fr minmax(100px, 1fr);
+  grid-template-areas:
+    "header header header"
+    "sidenav content anuncio"
+    "sidenav footer footer";
+}
