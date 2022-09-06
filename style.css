@@ -35,7 +35,7 @@ img {
 .sidenav {
   grid-area: sidenav;
 }
-.content {
+.conteudo-principal {
   grid-area: content;
 }
 .anuncios {
@@ -101,7 +101,7 @@ header nav a {
 }
 
 /*CONTENT*/
-.content {
+.conteudo-principal {
   max-width: 900px;
   margin: 0 auto;
   padding: 30px;
@@ -312,7 +312,7 @@ p {
 
 /*CONTENT*/
 @media (max-width: 600px) {
-  .content {
+  .conteudo-principal {
     grid-template-columns: auto; /*uma só coluna de auto*/
   }
   img {
