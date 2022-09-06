@@ -21,7 +21,7 @@ img {
   max-width: 100%;
 }
 /*GRID GERAL AQUI inicio-----------------------------------------*/
-.estrutura {
+.container-do-site-todo {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 300px; /*p/ definir a qtidade de colunas do site, que são 3*/
   grid-template-areas:  /*defindo as areas*/
@@ -29,7 +29,7 @@ img {
     "sidenav content anuncios"
     "footer footer footer";
 }
-.header {
+.header-primario {
   grid-area: header; /*posicionando nas area*/
 }
 .sidenav {
@@ -47,7 +47,7 @@ img {
 /*GRID GERAL AQUI FIM---------------------------------------------*/
 
 /*HEADER*/
-.header {
+.header-primario {
   background: linear-gradient(135deg, #8844ee, #b07dfb);
   padding: 30px;
   display: grid;
@@ -71,12 +71,12 @@ header nav a {
   border-radius: 5px;
   transition: 0.1s; /*a saída do mouse de cima do a fica mais suave*/
 }
-.header nav a:hover {
+.header-primario nav a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
 /*o + aqui seria como "todo li que vier após um li, eu quero add esse parametro"*/
-.header li + li {
+.header-primario li + li {
   margin-left: 30px;
 }
 
@@ -239,7 +239,7 @@ p {
 
 /*RESPONSIVO--------------------------------*/
 @media (max-width: 1200px) {
-  .estrutura {
+  .container-do-site-todo {
     grid-template-areas:
       "header header header"
       "sidenav content content"
@@ -249,7 +249,7 @@ p {
 }
 
 @media (max-width: 760px) {
-  .estrutura {
+  .container-do-site-todo {
     grid-template-columns: 100%;
     grid-template-areas:
       "header"
@@ -261,16 +261,16 @@ p {
 }
 
 @media (max-width: 760px) {
-  .header {
+  .header-primario {
     grid-template-columns: auto; /*apenas 1 coluna de auto*/
   }
   .logo {
     margin-bottom: 20px;
   }
-  .header nav a {
+  .header-primario nav a {
     font-size: 1em;
   }
-  .header li + li {
+  .header-primario li + li {
     margin-left: 10px;
   }
 }
