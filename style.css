@@ -131,7 +131,7 @@ p {
   color: rgba(0, 0, 0, 0.7);
 }
 /*falar com o p que vem após o p*/
-.informacoes p + p {
+.informacao-lobo p + p {
   margin-top: 30px;
 }
 
